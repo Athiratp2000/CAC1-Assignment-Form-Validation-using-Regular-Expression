@@ -8,6 +8,28 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Login Page</title>
     <link rel="stylesheet" href="login.css">
+    <style>
+        a:link {
+          color: green;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        a:visited {
+          color: pink;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        a:hover {
+          color: white;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+        a:active {
+          color: yellow;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+        </style>
 </head>
 <body>
     <div class="login">
@@ -15,8 +37,8 @@
         <form  action="feedback.html" onsubmit="return validation()"><br>
             <input type="email" id ="useremail" name="email" placeholder="Email address" required="required" />
             <input type="password" id ="psw" name="password" placeholder="Password" required="required" /><br><valid style="font-size: 15px;"></valid><br>
-            <button type="submit" class="btn btn-primary btn-block btn-large">Log in</button>
-            <a href="feedback.html">Skip Login and directly go to feedback? click here.</a>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Log in</button><br><a href="feedback.html">Skip Login and directly go to feedback? click here.</a>
+
         </form>
     </div>
 </body>
